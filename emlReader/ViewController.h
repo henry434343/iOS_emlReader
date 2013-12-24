@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContentViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, strong) NSMutableArray *array;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

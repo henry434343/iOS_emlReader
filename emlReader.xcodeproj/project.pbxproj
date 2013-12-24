@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90A53531833141E00FB4094 /* EmlDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A53521833141E00FB4094 /* EmlDecoder.m */; };
+		D90A53571833733F00FB4094 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A53561833733F00FB4094 /* ContentViewController.m */; };
+		D92C59A0183200FF000A87A3 /* EmlParse.m in Sources */ = {isa = PBXBuildFile; fileRef = D92C599F183200FF000A87A3 /* EmlParse.m */; };
+		D92C59A318320180000A87A3 /* EmlItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D92C59A218320180000A87A3 /* EmlItem.m */; };
 		D9ECE0801831D7DD00FBC0C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ECE07F1831D7DD00FBC0C4 /* Foundation.framework */; };
 		D9ECE0821831D7DD00FBC0C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ECE0811831D7DD00FBC0C4 /* CoreGraphics.framework */; };
 		D9ECE0841831D7DD00FBC0C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ECE0831831D7DD00FBC0C4 /* UIKit.framework */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D90A53511833141E00FB4094 /* EmlDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmlDecoder.h; sourceTree = "<group>"; };
+		D90A53521833141E00FB4094 /* EmlDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmlDecoder.m; sourceTree = "<group>"; };
+		D90A53551833733F00FB4094 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentViewController.h; path = ../ContentViewController.h; sourceTree = "<group>"; };
+		D90A53561833733F00FB4094 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentViewController.m; path = ../ContentViewController.m; sourceTree = "<group>"; };
+		D92C599E183200FE000A87A3 /* EmlParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmlParse.h; sourceTree = "<group>"; };
+		D92C599F183200FF000A87A3 /* EmlParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmlParse.m; sourceTree = "<group>"; };
+		D92C59A118320180000A87A3 /* EmlItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmlItem.h; sourceTree = "<group>"; };
+		D92C59A218320180000A87A3 /* EmlItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmlItem.m; sourceTree = "<group>"; };
 		D9ECE07C1831D7DD00FBC0C4 /* emlReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emlReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9ECE07F1831D7DD00FBC0C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D9ECE0811831D7DD00FBC0C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,7 +132,15 @@
 				D9ECE0941831D7DD00FBC0C4 /* Main_iPad.storyboard */,
 				D9ECE0971831D7DD00FBC0C4 /* ViewController.h */,
 				D9ECE0981831D7DD00FBC0C4 /* ViewController.m */,
+				D90A53551833733F00FB4094 /* ContentViewController.h */,
+				D90A53561833733F00FB4094 /* ContentViewController.m */,
 				D9ECE09A1831D7DD00FBC0C4 /* Images.xcassets */,
+				D92C59A118320180000A87A3 /* EmlItem.h */,
+				D92C59A218320180000A87A3 /* EmlItem.m */,
+				D92C599E183200FE000A87A3 /* EmlParse.h */,
+				D92C599F183200FF000A87A3 /* EmlParse.m */,
+				D90A53511833141E00FB4094 /* EmlDecoder.h */,
+				D90A53521833141E00FB4094 /* EmlDecoder.m */,
 				D9ECE0861831D7DD00FBC0C4 /* Supporting Files */,
 			);
 			path = emlReader;
@@ -254,7 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9ECE0991831D7DD00FBC0C4 /* ViewController.m in Sources */,
+				D90A53571833733F00FB4094 /* ContentViewController.m in Sources */,
 				D9ECE0901831D7DD00FBC0C4 /* AppDelegate.m in Sources */,
+				D92C59A318320180000A87A3 /* EmlItem.m in Sources */,
+				D90A53531833141E00FB4094 /* EmlDecoder.m in Sources */,
+				D92C59A0183200FF000A87A3 /* EmlParse.m in Sources */,
 				D9ECE08C1831D7DD00FBC0C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +498,7 @@
 				D9ECE0B31831D7DD00FBC0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9ECE0B41831D7DD00FBC0C4 /* Build configuration list for PBXNativeTarget "emlReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +507,7 @@
 				D9ECE0B61831D7DD00FBC0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
